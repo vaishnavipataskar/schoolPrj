@@ -1,0 +1,62 @@
+<mat-form-field class="w-100">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
+</mat-form-field>
+
+<button class="btn btn-primary" (click)="toggleExpand()">{{allElementsExpanded ? 'Collapse All' : 'Expand All'}}</button>
+<table mat-table [dataSource]="dataSource" multiTemplateDataRows class="mat-elevation-z8">
+    <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay; let i=index">
+        <th mat-header-cell *matHeaderCellDef >{{column}}</th>
+        <td mat-cell *matCellDef="let element"> {{element.className}} </td>
+    </ng-container>
+    <ng-container matColumnDef="expand">
+        <th mat-header-cell *matHeaderCellDef aria-label="row actions">&nbsp;</th>
+        <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="expand row"
+                (click)="(expandedElement = expandedElement === element ? null : element); $event.stopPropagation()">
+                <mat-icon *ngIf="expandedElement !== element || !allElementsExpanded">keyboard_arrow_down</mat-icon>
+                <mat-icon *ngIf="expandedElement === element || allElementsExpanded">keyboard_arrow_up</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+
+    <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+    <ng-container matColumnDef="expandedDetail">
+        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+            <div class="example-element-detail"
+                [@detailExpand]="element == expandedElement || allElementsExpanded ? 'expanded' : 'collapsed'">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>email</th>
+                        <th>Phone</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr *ngFor="let i of element.students">
+                        <td class="example-element-name">{{i.name}}</td>
+                        <td class="example-element-name">{{i.address}}</td>
+                        <td class="example-element-name">{{i.email}}</td>
+                        <td class="example-element-name">{{i.phone}}</td>
+                        <td class="example-element-name">{{i.class}}</td>
+                    </tr>
+                </table>
+                <div class="example-element-description">
+                    {{element.description}}
+                </div>
+            </div>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="example-element-row"
+        [class.example-expanded-row]="expandedElement === element || allElementsExpanded"
+        (click)="expandedElement = expandedElement === element || allElementsExpanded ? null : element">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+    <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+    </tr>
+</table>
+
+<mat-paginator [pageSizeOptions]="[5]" aria-label="Select page of users"></mat-paginator>
