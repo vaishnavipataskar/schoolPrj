@@ -32,7 +32,6 @@ import { MatSortModule } from '@angular/material/sort';
     MatExpansionModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule,
     MatButtonModule,
   ],
   providers: [],
