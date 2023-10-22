@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { StudentListComponent } from './student-list/student-list.component';
 import { MatSortModule } from '@angular/material/sort';
+import { GridModule } from 'smart-webcomponents-angular/grid';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     FormsModule,
     MatButtonModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

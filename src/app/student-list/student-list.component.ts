@@ -225,21 +225,18 @@ export class StudentListComponent implements AfterViewInit{
   columnsToDisplayWithExpand = [...this.columnsToDisplay, 'expand'];
   expandedElement: any[] | any;
   dataSource: MatTableDataSource<any>;
-  // dataSource2: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
   constructor() {
     this.dataSource = new MatTableDataSource(this.studentDataset);
-    // this.dataSource2 = new MatTableDataSource(this.studentDataset.);
     console.log(this.studentDataset)
   }
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
-    // this.dataSource2.sort = this.sort;
   }
 
   toggleExpand(){
@@ -249,8 +246,11 @@ export class StudentListComponent implements AfterViewInit{
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+    console.log(this.dataSource);
+    console.log(filterValue.trim().toLowerCase());
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
   }
+  
 }
