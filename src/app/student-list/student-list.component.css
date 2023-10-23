@@ -55,3 +55,29 @@ smart-grid {
     width: 100%;
     height: auto;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  position: relative;
+}
+
+.resizer {
+  width: 6px;
+  height: 100%;
+  background: #f0f0f0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: col-resize;
+}
+
+
+
+
+
