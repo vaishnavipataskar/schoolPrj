@@ -20,11 +20,11 @@ export class StudentListComponent implements AfterViewInit, OnInit {
 
   studentDataset = [
     {
-      className: 'class1',
+      className: 'class01',
       students: [
         {
 
-          className: 'class1',
+          className: 'class01',
           name: 'Akshay',
           address: 'kaudane',
           email: 'akshay@gmail.com',
@@ -32,7 +32,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 1
         },
         {
-          className: 'class1',
+          className: 'class01',
           name: 'Raju',
           address: 'koregav',
           email: 'raju@gmail.com',
@@ -40,7 +40,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 1
         },
         {
-          className: 'class1',
+          className: 'class01',
           name: 'Prakash',
           address: 'shikrapur',
           email: 'prakash@gmail.com',
@@ -50,10 +50,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class2',
+      className: 'class02',
       students: [
         {
-          className: 'class2',
+          className: 'class02',
           name: 'Sunil',
           address: 'wagholi',
           email: 'sunil@gmail.com',
@@ -61,7 +61,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 2
         },
         {
-          className: 'class2',
+          className: 'class02',
           name: 'Mahesh',
           address: 'karvenagar',
           email: 'mahesh@gmail.com',
@@ -69,7 +69,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 2
         },
         {
-          className: 'class2',
+          className: 'class02',
           name: 'Ankita',
           address: 'baner',
           email: 'ankita@gmail.com',
@@ -79,10 +79,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class3',
+      className: 'class03',
       students: [
         {
-          className: 'class3',
+          className: 'class03',
           name: 'Shravani',
           address: 'vimannagar',
           email: 'shravani@gmail.com',
@@ -90,7 +90,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 3
         },
         {
-          className: 'class3',
+          className: 'class03',
           name: 'sai',
           address: 'manjari',
           email: 'sai@gmail.com',
@@ -98,7 +98,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 3
         },
         {
-          className: 'class3',
+          className: 'class03',
           name: 'Ganesh',
           address: 'katraj',
           email: 'ganesh@gmail.com',
@@ -108,10 +108,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class4',
+      className: 'class04',
       students: [
         {
-          className: 'class4',
+          className: 'class04',
           name: 'Sandhya',
           address: 'hadapsar',
           email: 'sandhya@gmail.com',
@@ -119,7 +119,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 4
         },
         {
-          className: 'class4',
+          className: 'class04',
           name: 'Monika',
           address: 'vadagav sheri',
           email: 'monika@gmail.com',
@@ -127,7 +127,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 4
         },
         {
-          className: 'class4',
+          className: 'class04',
           name: 'Sarthak',
           address: 'lohgaon',
           email: 'sarthak@gmail.com',
@@ -137,10 +137,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class5',
+      className: 'class05',
       students: [
         {
-          className: 'class5',
+          className: 'class05',
           name: 'Shourya',
           address: 'kharadi',
           email: 'shourya@gmail.com',
@@ -148,7 +148,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 5
         },
         {
-          className: 'class5',
+          className: 'class05',
           name: 'Darshan',
           address: 'dhankawadi',
           email: 'darshan@gmail.com',
@@ -156,7 +156,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 5
         },
         {
-          className: 'class5',
+          className: 'class05',
           name: 'Gauri',
           address: 'shivajinagar',
           email: 'gauri@gmail.com',
@@ -166,10 +166,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class6',
+      className: 'class06',
       students: [
         {
-          className: 'class6',
+          className: 'class06',
           name: 'Sreva',
           address: 'sambhajinagar',
           email: 'sreva@gmail.com',
@@ -177,7 +177,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 6
         },
         {
-          className: 'class6',
+          className: 'class06',
           name: 'Manasi',
           address: 'nagar',
           email: 'manasi@gmail.com',
@@ -185,7 +185,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 6
         },
         {
-          className: 'class6',
+          className: 'class06',
           name: 'Reva',
           address: 'pathardi',
           email: 'reva@gmail.com',
@@ -195,10 +195,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class7',
+      className: 'class07',
       students: [
         {
-          className: 'class7',
+          className: 'class07',
           name: 'Harshad',
           address: 'daund',
           email: 'harshad@gmail.com',
@@ -206,7 +206,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 7
         },
         {
-          className: 'class7',
+          className: 'class07',
           name: 'Santosh',
           address: 'patas',
           email: 'santosh@gmail.com',
@@ -214,7 +214,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 7
         },
         {
-          className: 'class7',
+          className: 'class07',
           name: 'Sunita',
           address: 'baramati',
           email: 'sunita@gmail.com',
@@ -224,10 +224,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class8',
+      className: 'class08',
       students: [
         {
-          className: 'class8',
+          className: 'class08',
           name: 'Sandip',
           address: 'shirur',
           email: 'sandip@gmail.com',
@@ -235,7 +235,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 8
         },
         {
-          className: 'class8',
+          className: 'class08',
           name: 'Sumit',
           address: 'songaon',
           email: 'sumit@gmail.com',
@@ -243,7 +243,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 8
         },
         {
-          className: 'class8',
+          className: 'class08',
           name: 'Vicky',
           address: 'kashti',
           email: 'vicky@gmail.com',
@@ -253,10 +253,10 @@ export class StudentListComponent implements AfterViewInit, OnInit {
       ]
     },
     {
-      className: 'class9',
+      className: 'class09',
       students: [
         {
-          className: 'class9',
+          className: 'class09',
           name: 'Sagar',
           address: 'lonavala',
           email: 'sagar@gmail.com',
@@ -264,7 +264,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 9
         },
         {
-          className: 'class9',
+          className: 'class09',
           name: 'Amol',
           address: 'beed',
           email: 'amol@gmail.com',
@@ -272,7 +272,7 @@ export class StudentListComponent implements AfterViewInit, OnInit {
           class: 9
         },
         {
-          className: 'class9',
+          className: 'class09',
           name: 'Roshni',
           address: 'malegaon',
           email: 'roshni@gmail.com',
